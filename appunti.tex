@@ -1,0 +1,59 @@
+%\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,11pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{graphicx} %for includng images
+\graphicspath{{img/}}
+
+\usepackage{siunitx} % package for deciBel and other units
+
+\usepackage{amsmath} % package for ``cases'' and other matemagical stuff
+
+\usepackage[american]{circuitikz} % circuit drawer
+\ctikzset{/tikz/circuitikz/bipoles/length=1cm} %dimensione componenti
+
+\usepackage{subcaption}  %per immagini multiple
+
+%\usepackage{xcolor} % Colori!
+\usepackage{colortbl} %colori nelle tabelle!!
+
+\usepackage{multirow} %righe doppie nelle tabelle
+
+\usepackage{makecell} %multirow box
+
+\usepackage{hyperref}
+
+\usepackage{cancel} %utile a cancellare termini nelle equazioni
+\hypersetup{ % vedi https://it.overleaf.com/learn/latex/hyperlinks
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue
+}
+\title{Appunti di Apparecchi ed Impianti Elettrici}
+\author{Daniele Olivieri}
+\date{}
+
+\pdfinfo{%
+  /Title    ()
+  /Author   ()
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords ()
+}
+%\includeonly{06_19_03_esercizi}
+\begin{document}
+\maketitle
+Ti piacciono i miei appunti? Saranno sempre liberi e gratuiti ma puoi sostenermi con una donazione cliccando \href{https://www.paypal.com/donate?hosted_button_id=7KELP768NJSYW}{QUI}
+
+Puoi accedere ai codici sorgente seguendo questo \href{https://github.com/FlashNoob98/appunti_principi_II_unina}{link} invece.
+\setcounter{tocdepth}{2}
+\tableofcontents
+\setlength\arrayrulewidth{1.2pt} %larghezza righe tabelle
+\include{01}
+
+Work in progress...
+\end{document}
